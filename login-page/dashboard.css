@@ -1,0 +1,136 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    position: relative; /* Enables positioning for child elements */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 1100px; /* Looks good on desktops */
+    height: 80vh;
+    text-align: center;
+}
+
+/* Top-right Login Link */
+.top-right {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.top-right a {
+    text-decoration: none;
+    color: #004d40;
+    padding: 8px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.top-right a:hover {
+    color: white;
+}
+
+/* Main Heading */
+h1 {
+    color: #00796b;
+    font-size: 38px;
+    margin: 0 0 25px 0;
+}
+/* Content container for images and paragraph */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Advertisement (Centered paragraph) */
+.advertisement {
+    font-size: 18px;
+    color: #00796b;
+    text-align: center;
+    max-width: 60%;
+    line-height: 1.5;
+    font-weight: bold;
+    flex: 1;
+}
+
+/* Image Styling */
+.left-image,
+.right-image {
+    width: 200px;
+    height: auto;
+}
+
+.left-image {
+    transform: scaleX(-1); /* Flip left image */
+}
+
+.right-image {
+    transform: scaleY(-1); /* Flip right image */
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+li {
+    padding: 20px;
+}
+
+/* Buttons */
+button {
+    color: #004d40;
+    padding: 12px 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 180px;
+}
+
+button:hover {
+    background-color: #00796b;
+    color: white;
+    border-radius: 5px;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Start Analyzing Button */
+.button-container button {
+    background-color: #00796b;
+    color: white;
+    /* padding: 12px 30px; */
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.button-container button:hover {
+    background-color: #004d40;
+}
