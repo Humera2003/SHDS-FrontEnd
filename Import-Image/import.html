@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Import File</title>
+    <link rel="stylesheet" href="import.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <a href="../login-page/dashboard.html">
+      <img src="../reports/arrow-back.png" alt="Back" class="top-right-arrow">
+    </a>
+    <img src="flower.png" alt="sunflower">
+    <div class="container">
+    <section class="centered-title">
+      <h1>Import File</h1>
+      <p>Upload an image file to analyze your skin health.</p>
+    </section>
+
+    <!-- File Upload Section -->
+    <main>
+      <div class="file-upload-container">
+        <div class="upload-box" id="drag-drop-area">
+          <p>Drag & Drop your file here or <span>click to upload</span></p>
+          <input type="file" id="fileInput" accept=".jpg, .png" hidden />
+        </div>
+        <div class="preview-area" id="previewArea"></div>
+        <div class="button-group">
+          <button id="clearButton" disabled>Clear</button>
+          <button id="analyzeButton" disabled>Analyze</button>
+        </div>
+      </div>
+    </div>
+    </main>
+    <script src="import.js"></script>
+  </body>
+</html>
