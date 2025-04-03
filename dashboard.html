@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page (Dashboard)</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <span class="top-right"><a href="login.html">Login/Sign up</a></span>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><button onclick="navigateTo('../Import-Image/import.html')">Import File</button></li>
+                <li><button onclick="navigateTo('../reports/new_report.html')">New Report Page</button></li>
+                <li><button onclick="navigateTo('../reports/Reports.html')">Old Report List</button></li>
+            </ul>
+        </nav>
+        <h1>Welcome to the Skin Health Diagnostic System</h1>
+        <div class="content-container">
+            <img class="left-image" src="images/leaf.png" alt="Leaf Image">
+            <p class="advertisement">
+                Get instant insights into your skin's condition with our advanced diagnostic system.<br>  
+                Simply upload an image to receive a detailed analysis and a comprehensive report.<br>  
+                <strong>Try it now and take control of your skin health!</strong>
+            </p>
+            <img class="right-image" src="images/leaf.png" alt="Leaf Image">
+        </div>  
+        <div class="button-container">
+            <button onclick="navigateTo('../Import-Image/import.html')">Start Analyzing</button>
+        </div>      
+        <script>
+            // Function to check login status before navigating
+            function navigateTo(page) {
+                const isLoggedIn = localStorage.getItem("isLoggedIn"); // Retrieve login status
+        
+                if (isLoggedIn === "true") {
+                    window.location.href = page; // Allow navigation
+                } else {
+                    alert("Please log in first!"); 
+                    window.location.href = "login.html"; // Redirect to login page
+                }
+            }
+        </script>
+        
+    </div>
+</body>
+</html>

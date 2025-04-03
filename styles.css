@@ -1,0 +1,98 @@
+/* Common styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .top-right-arrow {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 30px; /* Adjust size */
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .top-right-arrow:hover {
+    opacity: 0.2; /* Add hover effect */
+  }
+  
+  .signup-container, .login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+  }
+  
+  .signup-box,
+   .login-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    gap: 20px;
+  }
+  img{
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    width: 300px;
+  }
+  
+  h2 {
+    color: #00796b;
+  }
+  
+  .input-box {
+    position: relative;
+    margin: 30px 0;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #00796b;
+    outline: none;
+    color: #00796b;
+    font-size: 18px;
+  }
+  
+  .input-box label {
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #757575;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .input-box input:focus ~ label,
+  .input-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #00796b;
+    font-size: 14px;
+  }
+  
+  .btn {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background-color: #004d40;
+  }
+  
